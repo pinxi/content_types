@@ -3,13 +3,13 @@
 /**
  * Implementation of hook_content_default_fields().
  */
-function content_article_content_default_fields() {
+function content_activity_content_default_fields() {
   $fields = array();
 
-  // Exported field: field_article_associated_conten
-  $fields['article-field_article_associated_conten'] = array(
-    'field_name' => 'field_article_associated_conten',
-    'type_name' => 'article',
+  // Exported field: field_activity_associated_conten
+  $fields['activity-field_activity_associated_conten'] = array(
+    'field_name' => 'field_activity_associated_conten',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -67,7 +67,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_associated_conten][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_activity_associated_conten][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -79,10 +79,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_associated_media
-  $fields['article-field_article_associated_media'] = array(
-    'field_name' => 'field_article_associated_media',
-    'type_name' => 'article',
+  // Exported field: field_activity_associated_media
+  $fields['activity-field_activity_associated_media'] = array(
+    'field_name' => 'field_activity_associated_media',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -128,7 +128,7 @@ function content_article_content_default_fields() {
       'page' => 0,
       'profile' => 0,
       'spotlight' => 0,
-      'article_theme' => 0,
+      'activity_theme' => 0,
       'workshop' => 0,
       'advert' => FALSE,
       'article' => FALSE,
@@ -147,7 +147,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_associated_media][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_activity_associated_media][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -159,10 +159,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_contributor
-  $fields['article-field_article_contributor'] = array(
-    'field_name' => 'field_article_contributor',
-    'type_name' => 'article',
+  // Exported field: field_activity_contributor
+  $fields['activity-field_activity_contributor'] = array(
+    'field_name' => 'field_activity_contributor',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -220,7 +220,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_contributor][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_activity_contributor][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -232,10 +232,59 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_deck
-  $fields['article-field_article_deck'] = array(
-    'field_name' => 'field_article_deck',
-    'type_name' => 'article',
+  // Exported field: field_activity_css
+  $fields['activity-field_activity_css'] = array(
+    'field_name' => 'field_activity_css',
+    'type_name' => 'activity',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'css',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'label' => 'CSS',
+      'weight' => '-1',
+      'description' => '',
+      'type' => 'filefield_widget',
+      'module' => 'filefield',
+    ),
+  );
+
+  // Exported field: field_activity_deck
+  $fields['activity-field_activity_deck'] = array(
+    'field_name' => 'field_activity_deck',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -282,7 +331,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_deck][0][value',
+          '_error_element' => 'default_value_widget][field_activity_deck][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -294,10 +343,59 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_header_image
-  $fields['article-field_article_header_image'] = array(
-    'field_name' => 'field_article_header_image',
-    'type_name' => 'article',
+  // Exported field: field_activity_flash
+  $fields['activity-field_activity_flash'] = array(
+    'field_name' => 'field_activity_flash',
+    'type_name' => 'activity',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'swf',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'label' => 'Flash',
+      'weight' => '-2',
+      'description' => '',
+      'type' => 'filefield_widget',
+      'module' => 'filefield',
+    ),
+  );
+
+  // Exported field: field_activity_header_image
+  $fields['activity-field_activity_header_image'] = array(
+    'field_name' => 'field_activity_header_image',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -360,10 +458,59 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_dates
-  $fields['article-field_article_promo_dates'] = array(
-    'field_name' => 'field_article_promo_dates',
-    'type_name' => 'article',
+  // Exported field: field_activity_js
+  $fields['activity-field_activity_js'] = array(
+    'field_name' => 'field_activity_js',
+    'type_name' => 'activity',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'js',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'label' => 'JS',
+      'weight' => 0,
+      'description' => '',
+      'type' => 'filefield_widget',
+      'module' => 'filefield',
+    ),
+  );
+
+  // Exported field: field_activity_promo_dates
+  $fields['activity-field_activity_promo_dates'] = array(
+    'field_name' => 'field_activity_promo_dates',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -432,10 +579,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_description
-  $fields['article-field_article_promo_description'] = array(
-    'field_name' => 'field_article_promo_description',
-    'type_name' => 'article',
+  // Exported field: field_activity_promo_description
+  $fields['activity-field_activity_promo_description'] = array(
+    'field_name' => 'field_activity_promo_description',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -482,7 +629,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_promo_description][0][value',
+          '_error_element' => 'default_value_widget][field_activity_promo_description][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -494,10 +641,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_image
-  $fields['article-field_article_promo_image'] = array(
-    'field_name' => 'field_article_promo_image',
-    'type_name' => 'article',
+  // Exported field: field_activity_promo_image
+  $fields['activity-field_activity_promo_image'] = array(
+    'field_name' => 'field_activity_promo_image',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -560,10 +707,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_priority
-  $fields['article-field_article_promo_priority'] = array(
-    'field_name' => 'field_article_promo_priority',
-    'type_name' => 'article',
+  // Exported field: field_activity_promo_priority
+  $fields['activity-field_activity_promo_priority'] = array(
+    'field_name' => 'field_activity_promo_priority',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -639,10 +786,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_suppress
-  $fields['article-field_article_promo_suppress'] = array(
-    'field_name' => 'field_article_promo_suppress',
-    'type_name' => 'article',
+  // Exported field: field_activity_promo_suppress
+  $fields['activity-field_activity_promo_suppress'] = array(
+    'field_name' => 'field_activity_promo_suppress',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -699,10 +846,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_promo_title
-  $fields['article-field_article_promo_title'] = array(
-    'field_name' => 'field_article_promo_title',
-    'type_name' => 'article',
+  // Exported field: field_activity_promo_title
+  $fields['activity-field_activity_promo_title'] = array(
+    'field_name' => 'field_activity_promo_title',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -749,7 +896,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_promo_title][0][value',
+          '_error_element' => 'default_value_widget][field_activity_promo_title][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -761,10 +908,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_short_description
-  $fields['article-field_article_short_description'] = array(
-    'field_name' => 'field_article_short_description',
-    'type_name' => 'article',
+  // Exported field: field_activity_short_description
+  $fields['activity-field_activity_short_description'] = array(
+    'field_name' => 'field_activity_short_description',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -811,7 +958,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_short_description][0][value',
+          '_error_element' => 'default_value_widget][field_activity_short_description][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -823,10 +970,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_sidebar
-  $fields['article-field_article_sidebar'] = array(
-    'field_name' => 'field_article_sidebar',
-    'type_name' => 'article',
+  // Exported field: field_activity_sidebar
+  $fields['activity-field_activity_sidebar'] = array(
+    'field_name' => 'field_activity_sidebar',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -873,7 +1020,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_sidebar][0][value',
+          '_error_element' => 'default_value_widget][field_activity_sidebar][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -885,10 +1032,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_theme
-  $fields['article-field_article_theme'] = array(
-    'field_name' => 'field_article_theme',
-    'type_name' => 'article',
+  // Exported field: field_activity_theme
+  $fields['activity-field_activity_theme'] = array(
+    'field_name' => 'field_activity_theme',
+    'type_name' => 'activity',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -946,7 +1093,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_theme][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_activity_theme][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -958,72 +1105,16 @@ homepage',
     ),
   );
 
-  // Exported field: field_asset_image
-  $fields['asset-field_asset_image'] = array(
-    'field_name' => 'field_asset_image',
-    'type_name' => 'asset',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'filefield',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'filefield',
-    'active' => '1',
-    'list_field' => '0',
-    'list_default' => 1,
-    'description_field' => '0',
-    'widget' => array(
-      'file_extensions' => 'png gif jpg jpeg',
-      'file_path' => '',
-      'progress_indicator' => 'bar',
-      'max_filesize_per_file' => '',
-      'max_filesize_per_node' => '',
-      'max_resolution' => '0',
-      'min_resolution' => '0',
-      'alt' => '',
-      'custom_alt' => 0,
-      'title' => '',
-      'custom_title' => 0,
-      'title_type' => 'textfield',
-      'default_image' => NULL,
-      'use_default_image' => 0,
-      'label' => 'Image',
-      'weight' => '-3',
-      'description' => '',
-      'type' => 'imagefield_widget',
-      'module' => 'imagefield',
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Associate Content');
   t('Associate Media');
+  t('CSS');
   t('Contributor');
   t('Deck');
+  t('Flash');
   t('Header Image');
-  t('Image');
+  t('JS');
   t('Promotional Dates');
   t('Promotional Description');
   t('Promotional Image');

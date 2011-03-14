@@ -3,13 +3,13 @@
 /**
  * Implementation of hook_content_default_fields().
  */
-function content_article_content_default_fields() {
+function content_contributor_content_default_fields() {
   $fields = array();
 
-  // Exported field: field_article_associated_conten
-  $fields['article-field_article_associated_conten'] = array(
-    'field_name' => 'field_article_associated_conten',
-    'type_name' => 'article',
+  // Exported field: field_contributor_associated_con
+  $fields['contributor-field_contributor_associated_con'] = array(
+    'field_name' => 'field_contributor_associated_con',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -67,7 +67,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_associated_conten][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_contributor_associated_conten][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -79,10 +79,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_associated_media
-  $fields['article-field_article_associated_media'] = array(
-    'field_name' => 'field_article_associated_media',
-    'type_name' => 'article',
+  // Exported field: field_contributor_associated_med
+  $fields['contributor-field_contributor_associated_med'] = array(
+    'field_name' => 'field_contributor_associated_med',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -128,7 +128,7 @@ function content_article_content_default_fields() {
       'page' => 0,
       'profile' => 0,
       'spotlight' => 0,
-      'article_theme' => 0,
+      'contributor_theme' => 0,
       'workshop' => 0,
       'advert' => FALSE,
       'article' => FALSE,
@@ -147,7 +147,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_associated_media][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_contributor_associated_media][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -159,10 +159,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_contributor
-  $fields['article-field_article_contributor'] = array(
-    'field_name' => 'field_article_contributor',
-    'type_name' => 'article',
+  // Exported field: field_contributor_contributor
+  $fields['contributor-field_contributor_contributor'] = array(
+    'field_name' => 'field_contributor_contributor',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -220,7 +220,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_contributor][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_contributor_contributor][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -232,10 +232,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_deck
-  $fields['article-field_article_deck'] = array(
-    'field_name' => 'field_article_deck',
-    'type_name' => 'article',
+  // Exported field: field_contributor_deck
+  $fields['contributor-field_contributor_deck'] = array(
+    'field_name' => 'field_contributor_deck',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -282,7 +282,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_deck][0][value',
+          '_error_element' => 'default_value_widget][field_contributor_deck][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -294,10 +294,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_header_image
-  $fields['article-field_article_header_image'] = array(
-    'field_name' => 'field_article_header_image',
-    'type_name' => 'article',
+  // Exported field: field_contributor_headshot
+  $fields['contributor-field_contributor_headshot'] = array(
+    'field_name' => 'field_contributor_headshot',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -352,7 +352,7 @@ function content_article_content_default_fields() {
       'title_type' => 'textfield',
       'default_image' => NULL,
       'use_default_image' => 0,
-      'label' => 'Header Image',
+      'label' => 'Headshot',
       'weight' => '-2',
       'description' => '',
       'type' => 'imagefield_widget',
@@ -360,10 +360,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_dates
-  $fields['article-field_article_promo_dates'] = array(
-    'field_name' => 'field_article_promo_dates',
-    'type_name' => 'article',
+  // Exported field: field_contributor_promo_dates
+  $fields['contributor-field_contributor_promo_dates'] = array(
+    'field_name' => 'field_contributor_promo_dates',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -432,10 +432,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_description
-  $fields['article-field_article_promo_description'] = array(
-    'field_name' => 'field_article_promo_description',
-    'type_name' => 'article',
+  // Exported field: field_contributor_promo_descript
+  $fields['contributor-field_contributor_promo_descript'] = array(
+    'field_name' => 'field_contributor_promo_descript',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -482,7 +482,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_promo_description][0][value',
+          '_error_element' => 'default_value_widget][field_contributor_promo_description][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -494,10 +494,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_image
-  $fields['article-field_article_promo_image'] = array(
-    'field_name' => 'field_article_promo_image',
-    'type_name' => 'article',
+  // Exported field: field_contributor_promo_image
+  $fields['contributor-field_contributor_promo_image'] = array(
+    'field_name' => 'field_contributor_promo_image',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -560,10 +560,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_priority
-  $fields['article-field_article_promo_priority'] = array(
-    'field_name' => 'field_article_promo_priority',
-    'type_name' => 'article',
+  // Exported field: field_contributor_promo_priority
+  $fields['contributor-field_contributor_promo_priority'] = array(
+    'field_name' => 'field_contributor_promo_priority',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -639,10 +639,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_suppress
-  $fields['article-field_article_promo_suppress'] = array(
-    'field_name' => 'field_article_promo_suppress',
-    'type_name' => 'article',
+  // Exported field: field_contributor_promo_suppress
+  $fields['contributor-field_contributor_promo_suppress'] = array(
+    'field_name' => 'field_contributor_promo_suppress',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -699,10 +699,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_promo_title
-  $fields['article-field_article_promo_title'] = array(
-    'field_name' => 'field_article_promo_title',
-    'type_name' => 'article',
+  // Exported field: field_contributor_promo_title
+  $fields['contributor-field_contributor_promo_title'] = array(
+    'field_name' => 'field_contributor_promo_title',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -749,7 +749,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_promo_title][0][value',
+          '_error_element' => 'default_value_widget][field_contributor_promo_title][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -761,10 +761,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_short_description
-  $fields['article-field_article_short_description'] = array(
-    'field_name' => 'field_article_short_description',
-    'type_name' => 'article',
+  // Exported field: field_contributor_short_descript
+  $fields['contributor-field_contributor_short_descript'] = array(
+    'field_name' => 'field_contributor_short_descript',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -811,7 +811,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_short_description][0][value',
+          '_error_element' => 'default_value_widget][field_contributor_short_description][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -823,72 +823,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_sidebar
-  $fields['article-field_article_sidebar'] = array(
-    'field_name' => 'field_article_sidebar',
-    'type_name' => 'article',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'text_processing' => '0',
-    'max_length' => '',
-    'allowed_values' => '',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'rows' => '5',
-      'size' => 60,
-      'default_value' => array(
-        '0' => array(
-          'value' => '',
-          '_error_element' => 'default_value_widget][field_article_sidebar][0][value',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Sidebar',
-      'weight' => '1',
-      'description' => '',
-      'type' => 'text_textarea',
-      'module' => 'text',
-    ),
-  );
-
-  // Exported field: field_article_theme
-  $fields['article-field_article_theme'] = array(
-    'field_name' => 'field_article_theme',
-    'type_name' => 'article',
+  // Exported field: field_contributor_theme
+  $fields['contributor-field_contributor_theme'] = array(
+    'field_name' => 'field_contributor_theme',
+    'type_name' => 'contributor',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -946,7 +884,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_theme][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_contributor_theme][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -958,79 +896,19 @@ homepage',
     ),
   );
 
-  // Exported field: field_asset_image
-  $fields['asset-field_asset_image'] = array(
-    'field_name' => 'field_asset_image',
-    'type_name' => 'asset',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'filefield',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'filefield',
-    'active' => '1',
-    'list_field' => '0',
-    'list_default' => 1,
-    'description_field' => '0',
-    'widget' => array(
-      'file_extensions' => 'png gif jpg jpeg',
-      'file_path' => '',
-      'progress_indicator' => 'bar',
-      'max_filesize_per_file' => '',
-      'max_filesize_per_node' => '',
-      'max_resolution' => '0',
-      'min_resolution' => '0',
-      'alt' => '',
-      'custom_alt' => 0,
-      'title' => '',
-      'custom_title' => 0,
-      'title_type' => 'textfield',
-      'default_image' => NULL,
-      'use_default_image' => 0,
-      'label' => 'Image',
-      'weight' => '-3',
-      'description' => '',
-      'type' => 'imagefield_widget',
-      'module' => 'imagefield',
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Associate Content');
   t('Associate Media');
   t('Contributor');
   t('Deck');
-  t('Header Image');
-  t('Image');
+  t('Headshot');
   t('Promotional Dates');
   t('Promotional Description');
   t('Promotional Image');
   t('Promotional Priority');
   t('Promotional Title');
   t('Short Description');
-  t('Sidebar');
   t('Suppress Content');
   t('Theme');
 

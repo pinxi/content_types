@@ -3,13 +3,13 @@
 /**
  * Implementation of hook_content_default_fields().
  */
-function content_article_content_default_fields() {
+function content_collection_content_default_fields() {
   $fields = array();
 
-  // Exported field: field_article_associated_conten
-  $fields['article-field_article_associated_conten'] = array(
-    'field_name' => 'field_article_associated_conten',
-    'type_name' => 'article',
+  // Exported field: field_collection_associated_cont
+  $fields['collection-field_collection_associated_cont'] = array(
+    'field_name' => 'field_collection_associated_cont',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -67,7 +67,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_associated_conten][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_collection_associated_conten][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -79,10 +79,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_associated_media
-  $fields['article-field_article_associated_media'] = array(
-    'field_name' => 'field_article_associated_media',
-    'type_name' => 'article',
+  // Exported field: field_collection_associated_medi
+  $fields['collection-field_collection_associated_medi'] = array(
+    'field_name' => 'field_collection_associated_medi',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -128,7 +128,7 @@ function content_article_content_default_fields() {
       'page' => 0,
       'profile' => 0,
       'spotlight' => 0,
-      'article_theme' => 0,
+      'collection_theme' => 0,
       'workshop' => 0,
       'advert' => FALSE,
       'article' => FALSE,
@@ -147,7 +147,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_associated_media][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_collection_associated_media][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -159,10 +159,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_contributor
-  $fields['article-field_article_contributor'] = array(
-    'field_name' => 'field_article_contributor',
-    'type_name' => 'article',
+  // Exported field: field_collection_contributor
+  $fields['collection-field_collection_contributor'] = array(
+    'field_name' => 'field_collection_contributor',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -220,7 +220,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_contributor][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_collection_contributor][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -232,10 +232,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_deck
-  $fields['article-field_article_deck'] = array(
-    'field_name' => 'field_article_deck',
-    'type_name' => 'article',
+  // Exported field: field_collection_deck
+  $fields['collection-field_collection_deck'] = array(
+    'field_name' => 'field_collection_deck',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -282,7 +282,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_deck][0][value',
+          '_error_element' => 'default_value_widget][field_collection_deck][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -294,10 +294,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_header_image
-  $fields['article-field_article_header_image'] = array(
-    'field_name' => 'field_article_header_image',
-    'type_name' => 'article',
+  // Exported field: field_collection_header_image
+  $fields['collection-field_collection_header_image'] = array(
+    'field_name' => 'field_collection_header_image',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -360,10 +360,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_dates
-  $fields['article-field_article_promo_dates'] = array(
-    'field_name' => 'field_article_promo_dates',
-    'type_name' => 'article',
+  // Exported field: field_collection_promo_dates
+  $fields['collection-field_collection_promo_dates'] = array(
+    'field_name' => 'field_collection_promo_dates',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -432,10 +432,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_description
-  $fields['article-field_article_promo_description'] = array(
-    'field_name' => 'field_article_promo_description',
-    'type_name' => 'article',
+  // Exported field: field_collection_promo_descripti
+  $fields['collection-field_collection_promo_descripti'] = array(
+    'field_name' => 'field_collection_promo_descripti',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -482,7 +482,7 @@ function content_article_content_default_fields() {
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_promo_description][0][value',
+          '_error_element' => 'default_value_widget][field_collection_promo_description][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -494,10 +494,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_image
-  $fields['article-field_article_promo_image'] = array(
-    'field_name' => 'field_article_promo_image',
-    'type_name' => 'article',
+  // Exported field: field_collection_promo_image
+  $fields['collection-field_collection_promo_image'] = array(
+    'field_name' => 'field_collection_promo_image',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -560,10 +560,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_priority
-  $fields['article-field_article_promo_priority'] = array(
-    'field_name' => 'field_article_promo_priority',
-    'type_name' => 'article',
+  // Exported field: field_collection_promo_priority
+  $fields['collection-field_collection_promo_priority'] = array(
+    'field_name' => 'field_collection_promo_priority',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -639,10 +639,10 @@ function content_article_content_default_fields() {
     ),
   );
 
-  // Exported field: field_article_promo_suppress
-  $fields['article-field_article_promo_suppress'] = array(
-    'field_name' => 'field_article_promo_suppress',
-    'type_name' => 'article',
+  // Exported field: field_collection_promo_suppress
+  $fields['collection-field_collection_promo_suppress'] = array(
+    'field_name' => 'field_collection_promo_suppress',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -699,10 +699,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_promo_title
-  $fields['article-field_article_promo_title'] = array(
-    'field_name' => 'field_article_promo_title',
-    'type_name' => 'article',
+  // Exported field: field_collection_promo_title
+  $fields['collection-field_collection_promo_title'] = array(
+    'field_name' => 'field_collection_promo_title',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -749,7 +749,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_promo_title][0][value',
+          '_error_element' => 'default_value_widget][field_collection_promo_title][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -761,10 +761,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_short_description
-  $fields['article-field_article_short_description'] = array(
-    'field_name' => 'field_article_short_description',
-    'type_name' => 'article',
+  // Exported field: field_collection_short_descripti
+  $fields['collection-field_collection_short_descripti'] = array(
+    'field_name' => 'field_collection_short_descripti',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -811,7 +811,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_short_description][0][value',
+          '_error_element' => 'default_value_widget][field_collection_short_description][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -823,10 +823,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_sidebar
-  $fields['article-field_article_sidebar'] = array(
-    'field_name' => 'field_article_sidebar',
-    'type_name' => 'article',
+  // Exported field: field_collection_sidebar
+  $fields['collection-field_collection_sidebar'] = array(
+    'field_name' => 'field_collection_sidebar',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -873,7 +873,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_article_sidebar][0][value',
+          '_error_element' => 'default_value_widget][field_collection_sidebar][0][value',
         ),
       ),
       'default_value_php' => NULL,
@@ -885,10 +885,10 @@ homepage',
     ),
   );
 
-  // Exported field: field_article_theme
-  $fields['article-field_article_theme'] = array(
-    'field_name' => 'field_article_theme',
-    'type_name' => 'article',
+  // Exported field: field_collection_theme
+  $fields['collection-field_collection_theme'] = array(
+    'field_name' => 'field_collection_theme',
+    'type_name' => 'collection',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -946,7 +946,7 @@ homepage',
       'default_value' => array(
         '0' => array(
           'nid' => NULL,
-          '_error_element' => 'default_value_widget][field_article_theme][0][nid][nid',
+          '_error_element' => 'default_value_widget][field_collection_theme][0][nid][nid',
         ),
       ),
       'default_value_php' => NULL,
@@ -958,64 +958,6 @@ homepage',
     ),
   );
 
-  // Exported field: field_asset_image
-  $fields['asset-field_asset_image'] = array(
-    'field_name' => 'field_asset_image',
-    'type_name' => 'asset',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'filefield',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'filefield',
-    'active' => '1',
-    'list_field' => '0',
-    'list_default' => 1,
-    'description_field' => '0',
-    'widget' => array(
-      'file_extensions' => 'png gif jpg jpeg',
-      'file_path' => '',
-      'progress_indicator' => 'bar',
-      'max_filesize_per_file' => '',
-      'max_filesize_per_node' => '',
-      'max_resolution' => '0',
-      'min_resolution' => '0',
-      'alt' => '',
-      'custom_alt' => 0,
-      'title' => '',
-      'custom_title' => 0,
-      'title_type' => 'textfield',
-      'default_image' => NULL,
-      'use_default_image' => 0,
-      'label' => 'Image',
-      'weight' => '-3',
-      'description' => '',
-      'type' => 'imagefield_widget',
-      'module' => 'imagefield',
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Associate Content');
@@ -1023,7 +965,6 @@ homepage',
   t('Contributor');
   t('Deck');
   t('Header Image');
-  t('Image');
   t('Promotional Dates');
   t('Promotional Description');
   t('Promotional Image');

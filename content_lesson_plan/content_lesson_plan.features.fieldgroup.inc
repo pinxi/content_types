@@ -3,14 +3,14 @@
 /**
  * Implementation of hook_fieldgroup_default_groups().
  */
-function content_article_fieldgroup_default_groups() {
+function content_lesson_plan_fieldgroup_default_groups() {
   $groups = array();
 
-  // Exported group: group_article_associated
-  $groups['article-group_article_associated'] = array(
+  // Exported group: group_lesson_plan_associated
+  $groups['lesson_plan-group_lesson_plan_associated'] = array(
     'group_type' => 'standard',
-    'type_name' => 'article',
-    'group_name' => 'group_article_associated',
+    'type_name' => 'lesson_plan',
+    'group_name' => 'group_lesson_plan_associated',
     'label' => 'Media & Related Content',
     'settings' => array(
       'form' => array(
@@ -44,16 +44,16 @@ function content_article_fieldgroup_default_groups() {
     ),
     'weight' => '2',
     'fields' => array(
-      '0' => 'field_article_associated_conten',
-      '1' => 'field_article_associated_media',
+      '0' => 'field_lesson_plan_associated_con',
+      '1' => 'field_lesson_plan_associated_med',
     ),
   );
 
-  // Exported group: group_article_promo
-  $groups['article-group_article_promo'] = array(
+  // Exported group: group_lesson_plan_promo
+  $groups['lesson_plan-group_lesson_plan_promo'] = array(
     'group_type' => 'standard',
-    'type_name' => 'article',
-    'group_name' => 'group_article_promo',
+    'type_name' => 'lesson_plan',
+    'group_name' => 'group_lesson_plan_promo',
     'label' => 'Content Promotion',
     'settings' => array(
       'form' => array(
@@ -87,21 +87,21 @@ function content_article_fieldgroup_default_groups() {
     ),
     'weight' => '3',
     'fields' => array(
-      '0' => 'field_article_promo_dates',
-      '1' => 'field_article_promo_title',
-      '2' => 'field_article_promo_description',
-      '3' => 'field_article_promo_image',
-      '4' => 'field_article_promo_priority',
-      '5' => 'field_article_promo_suppress',
-      '6' => 'field_article_theme',
+      '0' => 'field_lesson_plan_promo_dates',
+      '1' => 'field_lesson_plan_promo_title',
+      '2' => 'field_lesson_plan_promo_descript',
+      '3' => 'field_lesson_plan_promo_image',
+      '4' => 'field_lesson_plan_promo_priority',
+      '5' => 'field_lesson_plan_promo_suppress',
+      '6' => 'field_lesson_plan_theme',
     ),
   );
 
-  // Exported group: group_article_supplemental
-  $groups['article-group_article_supplemental'] = array(
+  // Exported group: group_lesson_plan_supplemental
+  $groups['lesson_plan-group_lesson_plan_supplemental'] = array(
     'group_type' => 'standard',
-    'type_name' => 'article',
-    'group_name' => 'group_article_supplemental',
+    'type_name' => 'lesson_plan',
+    'group_name' => 'group_lesson_plan_supplemental',
     'label' => 'Contributor, Header, Deck & Sidebar',
     'settings' => array(
       'form' => array(
@@ -135,10 +135,10 @@ function content_article_fieldgroup_default_groups() {
     ),
     'weight' => '-3',
     'fields' => array(
-      '0' => 'field_article_header_image',
-      '1' => 'field_article_contributor',
-      '2' => 'field_article_deck',
-      '3' => 'field_article_sidebar',
+      '0' => 'field_lesson_plan_header_image',
+      '1' => 'field_lesson_plan_contributor',
+      '2' => 'field_lesson_plan_deck',
+      '3' => 'field_lesson_plan_sidebar',
     ),
   );
 

@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_ctools_plugin_api().
  */
-function content_article_ctools_plugin_api() {
+function content_theme_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => 1);
@@ -13,12 +13,12 @@ function content_article_ctools_plugin_api() {
 /**
  * Implementation of hook_node_info().
  */
-function content_article_node_info() {
+function content_theme_node_info() {
   $items = array(
-    'article' => array(
-      'name' => t('Article'),
+    'theming' => array(
+      'name' => t('Theme/Sponsor'),
       'module' => 'features',
-      'description' => t('This is the article!'),
+      'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'has_body' => '1',
